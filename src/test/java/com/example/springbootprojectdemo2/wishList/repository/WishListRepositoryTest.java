@@ -17,7 +17,7 @@ public class WishListRepositoryTest {
         var wishList = new WishListEntity();
         wishList.setCategory("setCategory");
         wishList.setAddress("setAddress");
-        wishList.setReadAddress("setReadAddress");
+        wishList.setRoadAddress("setReadAddress");
         return wishList;
     }
 
