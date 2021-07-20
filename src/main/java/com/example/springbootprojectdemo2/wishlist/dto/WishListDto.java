@@ -19,7 +19,7 @@ public class WishListDto extends MemoryDbEntity {
     private String homePageLink;
     private String imageLink;
     private boolean isVisit;
-    private Integer visitCount;
+    private int visitCount;
     private LocalDateTime lastVisitDate;
 
 

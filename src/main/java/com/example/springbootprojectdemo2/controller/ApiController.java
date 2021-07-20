@@ -10,13 +10,13 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/restaurant")
+@RequestMapping("/api/food")
 @RequiredArgsConstructor
 public class ApiController {
 
     private final WishListService wishListService;
 
-    @GetMapping("search")
+    @GetMapping("/search")
     public WishListDto search(@RequestParam String query) {
         return wishListService.search(query);
     }
@@ -27,8 +27,18 @@ public class ApiController {
         return wishListService.add(wishListDto);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/wish-list")
     public List<WishListDto> findAll() {
         return wishListService.findAll();
+    }
+
+    @DeleteMapping("/{index}")
+    public void delete(@PathVariable int index) {
+        wishListService.delete(index);
+    }
+
+    @PostMapping("/{index}")
+    public void addVisit(@PathVariable Integer index) {
+        wishListService.addVisit(index);
     }
 }
