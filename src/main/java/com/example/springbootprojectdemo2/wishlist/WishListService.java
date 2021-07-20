@@ -69,7 +69,7 @@ public class WishListService {
         entity.setAddress(wishListDto.getAddress());
         entity.setRoadAddress(wishListDto.getRoadAddress());
         entity.setHomePageLink(wishListDto.getHomePageLink());
-        entity.setImageLink(wishListDto.getHomePageLink());
+        entity.setImageLink(wishListDto.getImageLink());
         entity.setVisit(wishListDto.isVisit());
         entity.setVisitCount(wishListDto.getVisitCount());
         entity.setLastVisitDate(wishListDto.getLastVisitDate());
@@ -84,7 +84,7 @@ public class WishListService {
         dto.setAddress(wishListEntity.getAddress());
         dto.setRoadAddress(wishListEntity.getRoadAddress());
         dto.setHomePageLink(wishListEntity.getHomePageLink());
-        dto.setImageLink(wishListEntity.getHomePageLink());
+        dto.setImageLink(wishListEntity.getImageLink());
         dto.setVisit(wishListEntity.isVisit());
         dto.setVisitCount(wishListEntity.getVisitCount());
         dto.setLastVisitDate(wishListEntity.getLastVisitDate());

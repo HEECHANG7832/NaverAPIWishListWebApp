@@ -10,7 +10,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/food")
+@RequestMapping("/api/restaurant")
 @RequiredArgsConstructor
 public class ApiController {
 
@@ -27,7 +27,7 @@ public class ApiController {
         return wishListService.add(wishListDto);
     }
 
-    @GetMapping("/wish-list")
+    @GetMapping("/all")
     public List<WishListDto> findAll() {
         return wishListService.findAll();
     }
